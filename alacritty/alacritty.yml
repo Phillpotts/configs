@@ -23,7 +23,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. Both lines and columns
@@ -46,9 +46,9 @@
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 8 
+    y: 8
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -68,7 +68,7 @@
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: 0.90
 
   # Startup Mode (changes require restart)
   #
@@ -131,7 +131,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: 'Fira Code NF' 
+    family: 'FiraCode Nerd Font Mono' 
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -142,7 +142,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Fira Code NF'
+    family: 'FiraCode Nerd Font Mono'
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -153,7 +153,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Fira Code NF' 
+    family: 'FiraCode Nerd Font Mono' 
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -164,7 +164,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Fira Code NF' 
+    family: 'FiraCode Nerd Font Mono' 
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -450,8 +450,8 @@ font:
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: ubuntu
 #  args:
 #    - --login
 
